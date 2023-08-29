@@ -12,13 +12,13 @@ nav ul {
 }
 
 nav ul li {
-	display: inline-block;
+	display: inline-block; /* hay que buscar otra forma de alinearlos con flexbox */
 	padding: 50px;
 }
 
 .botonera {
 	list-style: none;
-	height: 50px;
+	height: 50px; /* las alturas fijas son muy raras de utilizar, idealmente el tamaño de las cajas tiene que estar dado por el mismo contenido */
 	padding: 10px;
 	margin: 15px 0;
 	background-color: #C5D766;
@@ -47,8 +47,8 @@ nav ul li {
 	flex-direction: row;
 	align-items: center;
 	align-content: space-around;
-}
-
+} /* estas propiedades de flex no están funcionando porque estás llamando a lo mismo de la misma forma, la class está aplicada en la ul, y además tenés el llamado a lo mismo en la línea 9 */
+ 
 header img{
 	padding-top: 30px;
 }
@@ -83,7 +83,7 @@ h4 {
 }
 
 .datospersonales li {
-	list-style: none;
+	list-style: none; /* si todas las listas que uses van a tener la propiedad de list-style none es más conveniente setear esto en el selector universal (*) así no se repite */
 }
 
 .contacto div{
