@@ -1,11 +1,14 @@
 <!doctype html>
 <html>
-<head>
+<head> <!-- indentado de todo el head -->
 <meta charset="utf-8">
 <title>Fontaiña Velardez Morena</title>
 <link href="estilos.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
 </head>
+
+<!-- el tp va bastante bien, hay que aplicar flex en más lugares para mejorar. Una cosa que también podés probar para mejorar es investigar sobre los favicon para agregarle dentro del head -->
+	
 <body>
 	<header>
 		<nav class="botonera">
@@ -21,9 +24,9 @@
 	</header>
 	<main>
 		<section>
-			<article class="sobremi" id="sobremi">
+			<article class="sobremi" id="sobremi"> 
 				<h2>Sobre mí</h2>
-				<p>Toda mi vida quise que me digan Mo, pero todos me dicen More. Nací en Capital Federal pero viví toda mi vida en Llavallol. Actualmente estoy cursando el cuarto año de la carrera de Diseño y Comunicación Visual en la UNLa, la cual me permitió dar rienda suelta a mi creatividad e imaginación que desde siempre estuvo muy estimulada. Disfruto de escuchar música que tenga lo que yo defino como "ruiditos lindos", las pelis de terror y cocinar ñoquis.</p>
+				<p>Toda mi vida quise que me digan Mo, pero todos me dicen More. Nací en Capital Federal pero viví toda mi vida en Llavallol. Actualmente estoy cursando el cuarto año de la carrera de Diseño y Comunicación Visual en la UNLa, la cual me permitió dar rienda suelta a mi creatividad e imaginación que desde siempre estuvo muy estimulada. Disfruto de escuchar música que tenga lo que yo defino como "ruiditos lindos", las pelis de terror y cocinar ñoquis.</p> <!-- en la página se visualiza como una línea de texto muy larga, estaría mejor si, desde css, le otorgamos al contenedor padre la propiedad "max-width" para que tenga un límite de crecimiento, y así no moleste cuando veamos más adelante responsive-->
 			</article>
 		</section>
 		<section>
@@ -38,9 +41,9 @@
 				</ul>
 			</article>
 		</section>
-		<section>
+		<section> <!-- esta section está muy buena para aplicarle flexbox -->
 			<article class="contacto" id="contacto">
-				<h2>Contacto</h2>
+				<h2>Contacto</h2> <!-- esta parte de contacto tal vez quedaría mejor semánticamente si queda en la misma section que los datos personales -->
 				<div>
 					<a href="https://www.behance.net/morenafontaia" target= "_blank">
 						<img src="img/behance.svg" width="50px" height="50px" alt="be"> 
@@ -78,8 +81,8 @@
 			</article>
 		</section>
 	</main>
-	<footer>
-		<p>Computación III | Cátedra Wischñevsky | Agosto 2023</p>
+	<footer> <!-- esta sección está muy despegada del contenido general y se siente "volando" -->
+		<p>Computación III | Cátedra Wischñevsky | Agosto 2023</p> 
 	</footer>
 </body>
 </html>
