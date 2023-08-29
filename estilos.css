@@ -12,18 +12,22 @@ nav ul {
 }
 
 nav ul li {
-	display: inline;
+	display: inline-block;
 	padding: 50px;
 }
 
 .botonera {
 	list-style: none;
-	width: 100%;
 	height: 50px;
 	padding: 10px;
-	margin: 15px;
+	margin: 15px 0;
 	background-color: #C5D766;
 	border-radius: 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-content: space-around;
+	justify-content: center;
 }
 
 .botonera a {
@@ -31,11 +35,18 @@ nav ul li {
 	font-size: 20px;
 	text-decoration: none;
 	color: white;
-	padding: 10px 40px;
+	padding: 10px;
 }
 
 .botonera a:hover {
 	color: #46392A;
+}
+
+.itemsbotonera ul{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-content: space-around;
 }
 
 header img{
@@ -52,11 +63,16 @@ body{
 	font-family: 'Poppins', sans-serif;
 	font-weight: 500;
 	font-size: 14px;
-	padding-left: 20px;
+	padding: 0 50px 0 50px;
 	color: #46392A;
 }
+
+h1{
+	font-size: 60px;
+}
+
 h2 {
-	font-size: 35px;
+	font-size: 28px;
 	font-weight: 600;
 	color: #806D33;
 }
@@ -66,26 +82,14 @@ h4 {
 	font-weight: 500;
 }
 
-.sobremi {
-	padding-top: 20px;
-}
-
-.datospersonales {
-	padding-top: 20px;
-}
-
 .datospersonales li {
 	list-style: none;
 }
 
-.contacto {
-	padding-top: 20px;
-}
-
-.contacto a {
-	list-style: none;
-	color: #46392A;
-	text-decoration: none;
+.contacto div{
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
 }
 
 .contacto h4 {
@@ -93,7 +97,7 @@ h4 {
 	font-weight: 500;
 }
 
-.estudios {
+.sobremi, .datospersonales,.contacto, .estudios, .experiencialaboral, .capacidades {
 	padding-top: 20px;
 }
 
@@ -107,18 +111,14 @@ h4 {
 	font-weight: 900;
 }
 
-.experiencialaboral {
-	padding-top: 20px;
-}
-
 .experiencialaboral li {
 	list-style: none;
 }
 
 .capacidades {
-	padding-top: 20px;
+	display: flex;
+	align-items: right;
 }
-
 
 .capacidades li {
 	list-style: none;
@@ -127,5 +127,10 @@ h4 {
 footer p {
 	padding-top: 20px;
 	padding-bottom: 20px;
-	padding-left: 900px;
+}
+
+footer {
+	display: flex;
+	align-items: right;
+	justify-content: right;
 }
