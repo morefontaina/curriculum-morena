@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-
+/*verifica en los estilos que tenes align-content: center; y justify-center, si el align esta funcionando porque probe en varios, sacarlo y no se modico, lo cual quiere decir que no aporta*/
 *{
 	margin: 0px;
 	padding: 0px;
@@ -71,7 +71,7 @@ body{
 	font-weight: 500;
 	font-size: 14px;
 	padding: 0 50px 0 50px;
-	color: #46392A;
+	color: #46392A; /*fijate que este color ya no aparece porque lo superpone otro*/
 }
 
 h1{
