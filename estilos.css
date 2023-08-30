@@ -4,6 +4,7 @@
 *{
 	margin: 0px;
 	padding: 0px;
+	list-style: none;
 }
 
 nav ul {
@@ -11,16 +12,10 @@ nav ul {
 	padding-left: 40px;
 }
 
-nav ul li {
-	display: inline-block; /* hay que buscar otra forma de alinearlos con flexbox */
-	padding: 50px;
-}
-
 .botonera {
 	list-style: none;
-	height: 50px; /* las alturas fijas son muy raras de utilizar, idealmente el tamaño de las cajas tiene que estar dado por el mismo contenido */
 	padding: 10px;
-	margin: 15px 0;
+	margin: 15px 120px 0px 0px;
 	background-color: #C5D766;
 	border-radius: 10px;
 	display: flex;
@@ -42,13 +37,14 @@ nav ul li {
 	color: #46392A;
 }
 
-.itemsbotonera ul{
+.botonera ul{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	align-content: space-around;
-} /* estas propiedades de flex no están funcionando porque estás llamando a lo mismo de la misma forma, la class está aplicada en la ul, y además tenés el llamado a lo mismo en la línea 9 */
- 
+	align-content: space-between;
+	height: 50px;
+}
+  
 header img{
 	padding-top: 30px;
 }
@@ -68,6 +64,8 @@ body{
 }
 
 h1{
+	font-family: 'Comfortaa', cursive;
+	font-weight: 100;
 	font-size: 60px;
 }
 
@@ -80,16 +78,17 @@ h2 {
 h4 {
 	font-size: 16px;
 	font-weight: 500;
+	line-height: 16px;
 }
 
-.datospersonales li {
-	list-style: none; /* si todas las listas que uses van a tener la propiedad de list-style none es más conveniente setear esto en el selector universal (*) así no se repite */
+.sobremi p {
+	max-width: 420px;
 }
 
 .contacto div{
 	display: flex;
 	flex-direction: row;
-	gap: 10px;
+	gap: 20px;
 }
 
 .contacto h4 {
@@ -97,35 +96,51 @@ h4 {
 	font-weight: 500;
 }
 
-.sobremi, .datospersonales,.contacto, .estudios, .experiencialaboral, .capacidades {
-	padding-top: 20px;
+.sobremi, .datospersonales, .contacto, .habilidades, .capacidades, .idiomas, .estudios, .experiencialaboral, .proyectos {
+	padding-top: 30px;
 }
 
-.estudios h4 {
-	font-size: 14px;
-	font-weight: 500;
-	line-height: 16px;
+.contenedor {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 30px 250px 0px 0px;
 }
-.estudios h5 {
+
+.columna1{
+	margin-top: 0px;
+	margin-right: 30px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+
+.columna2 {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 2px;
+}
+
+h5 {
 	font-size: 14px;
 	font-weight: 900;
-}
-
-.experiencialaboral li {
-	list-style: none;
-}
-
-.capacidades li {
-	list-style: none;
 }
 
 footer p {
 	padding-top: 20px;
 	padding-bottom: 20px;
+	color: white;
 }
 
 footer {
+	padding: 5px;
+	margin: 30px 120px 15px 0px;
+	height: 20px;
+	background-color: #C5D766;
+	border-radius: 10px;
 	display: flex;
-	align-items: right;
-	justify-content: right;
+	flex-direction: row;
+	align-items: center;
+	align-content: space-around;
+	justify-content: center;
 }
