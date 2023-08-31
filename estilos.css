@@ -1,6 +1,5 @@
 @charset "utf-8";
 /* CSS Document */
-/*verifica en los estilos que tenes align-content: center; y justify-center, si el align esta funcionando porque probe en varios, sacarlo y no se modico, lo cual quiere decir que no aporta*/
 *{
 	margin: 0px;
 	padding: 0px;
@@ -26,7 +25,7 @@ nav ul {
 
 .botonera a {
 	font-family: 'Poppins', sans-serif;
-	font-size: 20px;
+	font-size: 16px;
 	text-decoration: none;
 	color: white;
 	padding: 10px;
@@ -57,6 +56,7 @@ nav ul {
 header img{
 	margin-top: 30px;
 	border-radius: 30px;
+	box-shadow: 0px 5px 20px;
 }
 
 header div {
@@ -71,13 +71,13 @@ body{
 	font-weight: 500;
 	font-size: 14px;
 	padding: 0 50px 0 50px;
-	color: #46392A; /*fijate que este color ya no aparece porque lo superpone otro*/
+	color: #46392A;
 }
 
 h1{
 	font-family: 'Comfortaa', cursive;
 	font-weight: 100;
-	font-size: 50px;
+	font-size: 55px;
 	line-height: 60px;
 }
 
@@ -92,45 +92,7 @@ h2 {
 h4 {
 	font-size: 16px;
 	font-weight: 500;
-	line-height: 16px;
-	line-height: 20px;
-}
-
-.sobremi p {
-	max-width: 420px;
-}
-
-.contacto div{
-	display: flex;
-	flex-direction: row;
-	gap: 20px;
-}
-
-.contacto h4 {
-	font-size: 14px;
-	font-weight: 500;
-}
-
-/* CONSULTA: no logré marginar a la izquierda tanto las imágenes .svg como el listado de habilidades, existe otra manera de hacerlo? puede ser que me esté confundiendo un par de etiquetas también, pero no le encontré la vuelta :( */
-
-.listado li {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: flex-start;
-	align-content: center;
-}
-
-.listado img {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: flex-start;
-	align-content: center;
-}
-
-.sobremi, .datospersonales, .contacto, .habilidades, .capacidades, .idiomas, .estudios, .experiencialaboral, .proyectos {
-	margin: 30px 0;
+	line-height: 18px;
 }
 
 .contenedor {
@@ -148,9 +110,46 @@ h4 {
 	margin: 0 0 0 2px;
 }
 
+.sobremi p {
+	max-width: 420px;
+}
+
+.contacto div{
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+
+.contacto h4 {
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.listado li {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-start;
+	align-content: flex-start;
+	align-items: flex-end;
+}
+
+.listado img {
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+	justify-content: flex-start;
+}
+
+.sobremi, .datospersonales, .contacto, .habilidades, .capacidades, .idiomas, .estudios, .experiencialaboral, .proyectos {
+	margin: 30px 0;
+}
+
 h5 {
 	font-size: 14px;
 	font-weight: 900;
+	line-height: 25px;
+	padding-bottom: 8px;
 }
 
 footer p {
@@ -162,8 +161,8 @@ footer p {
 footer {
 	padding: 5px;
 	margin: 30px 0px 30px 0px;
-	height: 40px;
-	background-color: #C5D766;
+	height: 30px;
+	background-color: #A28C48;
 	border-radius: 10px;
 	display: flex;
 	flex-direction: row;
