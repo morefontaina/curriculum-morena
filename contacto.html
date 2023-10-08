@@ -5,6 +5,25 @@
 <title>Formulario de contacto</title>
 </head>
 <body>
-	
+	<p>(*) Campos obligatorios</p>
+	<form method="post" action="mailto:morenafontaina@gmail.com?subject=Email enviado desde el formulario" target="_blank" enctype="text/plain">
+		
+		<label for="Nombre">* Nombre(s):</label>
+		<input type="text" name="Nombre" id="Nombre" maxlenght="30" placeholder="Indique su nombre completo" required>
+		
+		<label for="Apellido">* Apellido(s):</label>
+		<input type="text" name="Apellido" id="Apellido" maxlength="30" placeholder="Indique su apellido" required>
+		
+		<label for="Email">* Email:</label>
+		<input type="email" name="Email" id="Email" maxlenght="30" placeholder="Email de contacto" required>
+		
+		<label for="Teléfono">Teléfono:</label>
+		<input type="tel" name="Teléfono" id="Teléfono" placeholder="(011) ____ ____">
+		
+		<label for="Mensaje">* Mensaje</label>
+		<textarea name="Mensaje" id="Mensaje" maxlength="400"></textarea>
+		
+		<input type="submit" value="Enviar" formenctype="text/plain">
+	</form>
 </body>
 </html>
