@@ -1,29 +1,45 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Formulario de contacto</title>
+	<meta charset="utf-8">
+	<link href="estilos.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="img/favicon.svg">
+	<title>Formulario de contacto</title>
 </head>
 <body>
-	<p>(*) Campos obligatorios</p>
-	<form method="post" action="mailto:morenafontaina@gmail.com?subject=Email enviado desde el formulario" target="_blank" enctype="text/plain">
-		
-		<label for="Nombre">* Nombre(s):</label>
-		<input type="text" name="Nombre" id="Nombre" maxlenght="30" placeholder="Indique su nombre completo" required>
-		
-		<label for="Apellido">* Apellido(s):</label>
-		<input type="text" name="Apellido" id="Apellido" maxlength="30" placeholder="Indique su apellido" required>
-		
-		<label for="Email">* Email:</label>
-		<input type="email" name="Email" id="Email" maxlenght="30" placeholder="Email de contacto" required>
-		
-		<label for="Teléfono">Teléfono:</label>
-		<input type="tel" name="Teléfono" id="Teléfono" placeholder="(011) ____ ____">
-		
-		<label for="Mensaje">* Mensaje</label>
-		<textarea name="Mensaje" id="Mensaje" maxlength="400"></textarea>
-		
-		<input type="submit" value="Enviar" formenctype="text/plain">
-	</form>
+	<header>
+		<nav class="botonera">
+			<ul class="itemsbotonera">
+				<li><a href="#sobremi" target="_self">Sobre mí</a></li>
+				<li><a href="#habilidades" target="_self">Habilidades</a></li>
+				<li><a href="#experiencialaboral" target="_self">Experiencia laboral</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<p>(*) Campos obligatorios</p>
+		<form method="post" action="mailto:morenafontaina@gmail.com?subject=Email enviado desde el formulario" target="_blank" enctype="text/plain">
+
+			<label for="Nombre">* Nombre(s):</label>
+			<input type="text" name="Nombre" id="Nombre" maxlenght="30" placeholder="Indique su nombre completo" required>
+
+			<label for="Apellido">* Apellido(s):</label>
+			<input type="text" name="Apellido" id="Apellido" maxlength="30" placeholder="Indique su apellido" required>
+
+			<label for="Email">* Email:</label>
+			<input type="email" name="Email" id="Email" maxlenght="30" placeholder="Email de contacto" required>
+
+			<label for="Teléfono">Teléfono:</label>
+			<input type="tel" name="Teléfono" id="Teléfono" placeholder="(011) ____ ____">
+
+			<label for="Mensaje">* Mensaje</label>
+			<textarea name="Mensaje" id="Mensaje" maxlength="400"></textarea>
+
+			<input type="submit" value="Enviar" formenctype="text/plain">
+		</form>
+	</main>
+	<footer>
+		<p>Computación III | Cátedra Wischñevsky | Agosto 2023</p>
+	</footer>
 </body>
 </html>
