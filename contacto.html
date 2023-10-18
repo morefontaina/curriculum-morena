@@ -4,39 +4,48 @@
 	<meta charset="utf-8">
 	<link href="estilos.css" rel="stylesheet" type="text/css">
 	<link rel="icon" href="img/favicon.svg">
-	<title>Formulario de contacto</title>
+	<title>Contacto</title>
 </head>
 <body>
 	<header>
 		<nav class="botonera">
+			<a href="index.html">
+				<img src="img/favicon.svg" width="35" height="35" alt="Favicon"/></a>
 			<ul class="itemsbotonera">
-				<li><a href="#sobremi" target="_self">Sobre mí</a></li>
-				<li><a href="#habilidades" target="_self">Habilidades</a></li>
-				<li><a href="#experiencialaboral" target="_self">Experiencia laboral</a></li>
+				<li><a href="index.html" target="_self">Sobre mí</a></li>
+				<li><a href="proyectos.html" target="_self">Proyectos</a></li>
+				<li><a href="contacto.html" target="_self">Contacto</a></li>
 			</ul>
 		</nav>
 	</header>
-	<main>
-		<p>(*) Campos obligatorios</p>
+	<main class="contacto">
+		<h2>✦ Contacto</h2>
+		<h4>Dejame tu consulta sin problema! Podes ser específic@ y preguntar cuantas cosas quieras.</h4>
 		<form method="post" action="mailto:morenafontaina@gmail.com?subject=Email enviado desde el formulario" target="_blank" enctype="text/plain">
+			
+		<section class="contenedorformulario">
+			<p>(*) Campos obligatorios</p>
+			<div class="izquierda">
+				<label for="Nombre">* Nombre(s):</label>
+				<input type="text" name="Nombre" id="Nombre" maxlenght="30" placeholder="Indica tu nombre completo" required>
 
-			<label for="Nombre">* Nombre(s):</label>
-			<input type="text" name="Nombre" id="Nombre" maxlenght="30" placeholder="Indique su nombre completo" required>
+				<label for="Email">* Email:</label>
+				<input type="email" name="Email" id="Email" maxlenght="30" placeholder="Dejame un mail de contacto" required>
+			</div>
+			<div class="derecha">
+				<label for="Apellido">* Apellido(s):</label>
+				<input type="text" name="Apellido" id="Apellido" maxlength="30" placeholder="Indica tu apellido" required>
 
-			<label for="Apellido">* Apellido(s):</label>
-			<input type="text" name="Apellido" id="Apellido" maxlength="30" placeholder="Indique su apellido" required>
-
-			<label for="Email">* Email:</label>
-			<input type="email" name="Email" id="Email" maxlenght="30" placeholder="Email de contacto" required>
-
-			<label for="Teléfono">Teléfono:</label>
-			<input type="tel" name="Teléfono" id="Teléfono" placeholder="(011) ____ ____">
-
-			<label for="Mensaje">* Mensaje</label>
-			<textarea name="Mensaje" id="Mensaje" maxlength="400"></textarea>
-
-			<input type="submit" value="Enviar" formenctype="text/plain">
-		</form>
+				<label for="Teléfono">Teléfono:</label>
+				<input type="tel" name="Teléfono" id="Teléfono" placeholder="(011) ____ ____">
+			</div>
+			<div class="mensaje">
+				<label for="Mensaje">* Mensaje:</label>
+				<textarea name="Mensaje" id="Mensaje" maxlength="400" placeholder="Consultame sobre posibles proyectos!" required></textarea>
+			</div>
+		</section>
+			<input type="submit" value="Enviar consulta" formenctype="text/plain" class="enviar">
+		</form> <!-- me confunde un poquito el indentado en esta parte, toda la section debería estar adentro de la etiqueta de form o cómo tendría que estar?-->
 	</main>
 	<footer>
 		<p>Computación III | Cátedra Wischñevsky | Agosto 2023</p>
