@@ -6,6 +6,13 @@
 	list-style: none;
 }
 
+header {
+	position: fixed;
+	width: 93%;
+} /*no sé si es algo de mi navegador pero cuando abro el html de contacto el header baja unos pixeles, cosa que no sucede cuando abro los otros html*/
+
+/*acá también me faltaría ubicar en la esquina izquierda el .svg del favicon*/
+
 nav ul {
 	list-style: none;
 }
@@ -14,7 +21,7 @@ nav ul {
 	list-style: none;
 	padding: 10px;
 	margin: 15px 0px 0px 0px;
-	background-color: #C5D766;
+	background-color: #A28C48;
 	border-radius: 10px;
 	display: flex;
 	flex-direction: row;
@@ -28,11 +35,13 @@ nav ul {
 	font-size: 16px;
 	text-decoration: none;
 	color: white;
-	padding: 10px;
+	padding: 5px 10px;
+	border-radius: 10px;
 }
 
 .botonera a:hover {
-	color: #806D33;
+	background-color: #C5D766;
+	color: #46392A;
 }
 
 .botonera ul{
@@ -44,6 +53,11 @@ nav ul {
 	gap: 100px;
 }
 
+.botonera img {
+	display: flex;
+	align-items: center;
+} /* me gustaría sacarle el efecto de hover a la imagen pero no supe cómo */
+
 .fotoynombre{
 	display: flex;
 	align-content: center;
@@ -52,16 +66,20 @@ nav ul {
 	gap: 50px;
 	margin: 30px 200px 0px 200px;
 }
-  
-header img{
+
+.fotoynombre img{
 	margin-top: 30px;
-	border-radius: 30px;
+	border-radius: 15px;
 	box-shadow: 0px 5px 20px;
 }
 
 header div {
 	font-family: 'Poppins', sans-serif;
 	font-size: 60px;
+}
+
+main {
+	padding-top: 100px;
 }
 
 body{
@@ -78,15 +96,20 @@ h1{
 	font-family: 'Comfortaa', cursive;
 	font-weight: 100;
 	font-size: 55px;
-	line-height: 60px;
+	line-height: 65px;
 }
 
-h2 {
+.main h2 {
 	font-size: 28px;
 	line-height: 35px;
 	font-weight: 600;
 	color: #806D33;
 	margin-bottom: 15px;
+}
+
+.contacto h2 {
+	padding-top: 20px;
+	padding-bottom: 5px;
 }
 
 h4 {
@@ -114,12 +137,15 @@ h4 {
 	max-width: 420px;
 }
 
-.contacto div{
+.contacto div {
 	display: flex;
 	flex-direction: row;
 	gap: 20px;
 }
 
+.contacto img:hover {
+	fill: #806D33;
+}
 
 .contacto h4 {
 	font-size: 14px;
@@ -143,13 +169,52 @@ h4 {
 
 .sobremi, .datospersonales, .contacto, .habilidades, .capacidades, .idiomas, .estudios, .experiencialaboral, .proyectos {
 	margin: 30px 0;
-}
+} /*probé de mover el margin directamente al main (como me recomendaron) pero al hacerlo se perdieron ciertos espacios que se habían generado, no sé si estoy haciendo algo mal :( */
 
 h5 {
 	font-size: 14px;
 	font-weight: 900;
 	line-height: 25px;
 	padding-bottom: 8px;
+}
+
+.contenedorformulario {
+	margin: 30px 200px 0px 200px;
+}
+
+.contenedorformulario p {
+	padding-bottom: 20px;
+}
+
+form {
+	padding: 40px 0px;
+}
+
+label {
+	border-radius: 5px;
+}
+
+.izquierda, .derecha {
+	padding-bottom: 10px;
+}
+
+input {
+	width: 30%;
+	border-radius: 5px;
+	padding: 3px;
+	color: #A28C48;
+}
+
+.enviar {
+	margin-top: 30px;
+	padding: 10px;
+	border-radius: 10px;
+	color: white;
+	background-color: #A28C48;
+}
+
+.enviar:hover {
+	background-color: #46392A;
 }
 
 footer p {
