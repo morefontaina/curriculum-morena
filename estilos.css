@@ -8,10 +8,9 @@
 
 header {
 	position: fixed;
+	z-index: 1;
 	width: 93%;
 } /*no sé si es algo de mi navegador pero cuando abro el html de contacto el header baja unos pixeles, cosa que no sucede cuando abro los otros html*/
-
-/*acá también me faltaría ubicar en la esquina izquierda el .svg del favicon*/
 
 nav ul {
 	list-style: none;
@@ -22,12 +21,13 @@ nav ul {
 	padding: 10px;
 	margin: 15px 0px 0px 0px;
 	background-color: #A28C48;
+	box-shadow: 0px 5px 20px;
 	border-radius: 10px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	align-content: space-around;
-	justify-content: center;
+	justify-content: space-between;
 }
 
 .botonera a {
@@ -39,7 +39,7 @@ nav ul {
 	border-radius: 10px;
 }
 
-.botonera a:hover {
+.botonera ul a:hover {
 	background-color: #C5D766;
 	color: #46392A;
 }
@@ -56,7 +56,12 @@ nav ul {
 .botonera img {
 	display: flex;
 	align-items: center;
-} /* me gustaría sacarle el efecto de hover a la imagen pero no supe cómo */
+	transition: transform 0.3s ease;
+}
+
+.botonera img:hover {
+	transform: scale(1.1);
+}
 
 .fotoynombre{
 	display: flex;
@@ -97,6 +102,7 @@ h1{
 	font-weight: 100;
 	font-size: 55px;
 	line-height: 65px;
+	max-width: 600px;
 }
 
 .main h2 {
@@ -108,7 +114,6 @@ h1{
 }
 
 .contacto h2 {
-	padding-top: 20px;
 	padding-bottom: 5px;
 }
 
@@ -116,6 +121,7 @@ h4 {
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 18px;
+	padding-top: 8px;
 }
 
 .contenedor {
@@ -123,6 +129,7 @@ h4 {
 	flex-direction: row;
 	justify-content: space-around;
 	margin: 30px 200px 0px 200px;
+	gap: 10px;
 }
 
 .columna1{
@@ -141,16 +148,15 @@ h4 {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	gap: 10px;
+	gap: 15px;
+}
+
+.contacto img {
+	transition: transform 0.3s ease;
 }
 
 .contacto img:hover {
-	fill: #806D33;
-}
-
-.contacto h4 {
-	font-size: 14px;
-	font-weight: 500;
+	transform: scale(1.1);
 }
 
 .listado li {
@@ -176,7 +182,6 @@ h5 {
 	font-size: 14px;
 	font-weight: 900;
 	line-height: 25px;
-	padding-bottom: 8px;
 }
 
 .contenedorformulario {
@@ -236,6 +241,53 @@ textarea {
 	padding-top: 5px;
 	padding-bottom: 15px;
 	width: 60%;
+	max-width: 700px;
+}
+
+.contenedorgaleria {
+	height: auto;
+	width: 75%;
+	display: grid;
+	padding: 20px 0px 20px;
+}
+
+.contenedorgaleria img {
+	transition: transform 0.3s ease;
+}
+
+.contenedorgaleria img:hover {
+	transform: scale(1.1);
+}
+.fila1, .fila2 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	column-gap: 20px;
+}
+
+.fila1 {
+	padding-bottom: 20px;
+}
+
+
+
+.audio {
+	height: 100px;
+	margin-top: 20px;
+	padding: 12px 0px 10px;
+	background-color: #B2E067;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.audio h4 {
+	padding-top: 5px;
+}
+
+.audio h5 {
+	padding-bottom: none;
 }
 
 footer p {
@@ -255,4 +307,12 @@ footer {
 	align-items: center;
 	align-content: space-around;
 	justify-content: center;
+}
+
+.cursor {
+	position: fixed;
+	width: 30px;
+	height: 30px;
+	background-image: url("img/cursor.svg");
+	background-size: cover;
 }
