@@ -84,7 +84,7 @@ header div {
 }
 
 main {
-	padding-top: 100px;
+	padding-top: 60px;
 }
 
 body{
@@ -193,7 +193,7 @@ h5 {
 }
 
 form {
-	padding: 25px 0px;
+	padding: 25px 0px 15px;
 }
 
 label {
@@ -209,6 +209,9 @@ input {
 	border-radius: 5px;
 	padding: 3px;
 	border-color: #A28C48;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 12px;
 }
 
 textarea {
@@ -217,6 +220,9 @@ textarea {
 	border-radius: 5px;
 	padding: 3px;
 	border-color: #A28C48;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 12px;
 }
 
 .enviar {
@@ -225,12 +231,21 @@ textarea {
 	border-radius: 10px;
 	color: white;
 	background-color: #A28C48;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	transition: transform 0.3s ease;
 }
 
 .enviar:hover {
-	background-color: #46392A;
+	background-color: #618634;
 	transform: scale(1.1);
-	transition: transform 0.3s ease;
+}
+
+.redes {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
 }
 
 .proyectos h2 {
@@ -262,14 +277,27 @@ textarea {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	column-gap: 20px;
+	column-gap: 18px;
 }
 
 .fila1 {
-	padding-bottom: 20px;
+	padding-bottom: 18px;
 }
 
+.galeria main{
+	padding-top: 50px;
+}
 
+.galeriaimagen {
+	display: flex;
+	width: 50%;
+}
+
+.informacion {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+} /* quiero lograr que la información de cada imagen esté al costado pero no lo estaría logrando */
 
 .audio {
 	height: 100px;
@@ -298,7 +326,7 @@ footer p {
 
 footer {
 	padding: 5px;
-	margin: 30px 0px 30px 0px;
+	margin: 20px 0px 20px 0px;
 	height: 30px;
 	background-color: #A28C48;
 	border-radius: 10px;
