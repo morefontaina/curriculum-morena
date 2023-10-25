@@ -20,45 +20,39 @@
 			</ul>
 		</nav>
 	</header>
-	<main class="contacto">
+	<main class="contacto-formulario">
 		<h2>✦ Contacto</h2>
 		<h4>Dejame tu consulta sin problema! Podes ser específic@ y preguntar cuantas cosas quieras.</h4>
 		<form method="post" action="mailto:morenafontaina@gmail.com?subject=Email enviado desde el formulario" target="_blank" enctype="text/plain">
 			
-		<section class="contenedorformulario">
+		<article class="contenedorformulario">
 			<p>(*) Campos obligatorios</p>
-			<div class="izquierda">
-				<label for="Nombre">* Nombre(s):</label>
-				<input type="text" name="Nombre" id="Nombre" maxlenght="30" placeholder="Indica tu nombre completo" required>
+			<section class="items-formulario">
+				<div class="izquierda">
+					<label for="Nombre">* Nombre(s):</label>
+					<input type="text" name="Nombre" id="Nombre" maxlenght="30" placeholder="Indica tu nombre completo" required>
 
-				<label for="Email">* Email:</label>
-				<input type="email" name="Email" id="Email" maxlenght="30" placeholder="Dejame un mail de contacto" required>
-			</div>
-			<div class="derecha">
-				<label for="Apellido">* Apellido(s):</label>
-				<input type="text" name="Apellido" id="Apellido" maxlength="30" placeholder="Indica tu apellido" required>
+					<label for="Apellido">* Apellido(s):</label>
+					<input type="text" name="Apellido" id="Apellido" maxlength="30" placeholder="Indica tu apellido" required>
 
-				<label for="Teléfono">Teléfono:</label>
-				<input type="tel" name="Teléfono" id="Teléfono" placeholder="(011) ____ ____">
-			</div>
+				</div>
+				<div class="derecha">
+					<label for="Teléfono">Teléfono:</label>
+					<input type="tel" name="Teléfono" id="Teléfono" placeholder="(011) ____ ____">
+
+					<label for="Email">* Email:</label>
+					<input type="email" name="Email" id="Email" maxlenght="30" placeholder="Dejame un mail de contacto" required>
+				</div>
+			</section>
 			<div class="mensaje">
 				<label for="Mensaje">* Mensaje:</label>
 				<textarea name="Mensaje" id="Mensaje" maxlength="400" placeholder="Consultame sobre un posible proyecto, presupuestos, lo que gustes." required></textarea>
-				
-				<input type="submit" value="Enviá tu consulta" formenctype="text/plain" class="enviar">
 			</div>
-		</section>
+			<div class="enviar-formulario">	
+				<input type="submit" value="Enviá tu consulta" formenctype="text/plain">
+			</div>
+		</article>
 		</form> <!-- me confunde un poquito el indentado en esta parte, toda la section debería estar adentro de la etiqueta de form o cómo tendría que ser?-->
-		<div class="redes">
-			<a href="https://www.behance.net/morenafontaia" target= "_blank">
-				<img src="img/behance.svg" width="50px" height="50px" alt="be">
-					<circle cx="50" cy="50" r="40" fill="#806D33"/>
-			</a>
-			<a href="https://www.instagram.com/mofont_dg/" target= "_blank">
-				<img src="img/instagram.svg" width="50px" height="50px" alt="ig">
-					<circle cx="50" cy="50" r="40" fill="#806D33"/>
-			</a>
-		</div>
 	</main>
 	<footer>
 		<p>Computación III | Cátedra Wischñevsky | Agosto 2023</p>
