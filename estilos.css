@@ -10,7 +10,7 @@ header {
 	position: fixed;
 	z-index: 1;
 	width: 93%;
-} /*no sé si es algo de mi navegador pero cuando abro el html de contacto el header baja unos pixeles, cosa que no sucede cuando abro los otros html*/
+}
 
 nav ul {
 	list-style: none;
@@ -19,7 +19,7 @@ nav ul {
 .botonera {
 	list-style: none;
 	padding: 10px;
-	margin: 15px 0px 0px 0px;
+	margin: 15px 0px 15px 0px;
 	background-color: #A28C48;
 	box-shadow: 0px 5px 20px;
 	border-radius: 10px;
@@ -95,6 +95,7 @@ body{
 	font-size: 14px;
 	padding: 0 50px 0 50px;
 	color: #46392A;
+	cursor: url("img/cursor-dos.svg"), auto;
 }
 
 h1{
@@ -121,7 +122,7 @@ h4 {
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 18px;
-	padding-top: 8px;
+	margin-top: 8px;
 }
 
 .contenedor {
@@ -146,9 +147,7 @@ h4 {
 
 .contacto div {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	gap: 15px;
+	gap: 10px;
 }
 
 .contacto img {
@@ -192,6 +191,18 @@ h5 {
 	padding-bottom: 20px;
 }
 
+.items-formulario {
+	display: flex;
+	flex-direction: row;
+}
+
+.izquierda, .derecha {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 10px;
+}
+
 form {
 	padding: 25px 0px 15px;
 }
@@ -200,35 +211,46 @@ label {
 	border-radius: 5px;
 }
 
-.izquierda, .derecha {
-	padding-bottom: 10px;
-}
-
 input {
-	width: 30%;
+	width: 80%;
 	border-radius: 5px;
 	padding: 3px;
 	border-color: #A28C48;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 500;
 	font-size: 12px;
+}
+
+.mensaje {
+	margin-top: 10px;
 }
 
 textarea {
-	height: 40px;
-	width: 75%;
+	display: flex;
+	flex-direction: column;
+	height: 70px;
+	width: 90%;
+	margin-top: 10px;
 	border-radius: 5px;
-	padding: 3px;
+	padding: 5px;
 	border-color: #A28C48;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 500;
 	font-size: 12px;
 }
 
-.enviar {
-	margin-top: 20px;
+.enviar-formulario {
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 30px;
+	height: 40px;
+	width: 20%;
+}
+
+.enviar-formulario input {
 	padding: 10px;
-	border-radius: 10px;
+	height: 50px;
+	width: 100%;
 	color: white;
 	background-color: #A28C48;
 	font-family: 'Poppins', sans-serif;
@@ -237,15 +259,9 @@ textarea {
 	transition: transform 0.3s ease;
 }
 
-.enviar:hover {
+.enviar-formulario input:hover {
 	background-color: #618634;
 	transform: scale(1.1);
-}
-
-.redes {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
 }
 
 .proyectos h2 {
@@ -284,16 +300,50 @@ textarea {
 	padding-bottom: 18px;
 }
 
-.galeriaimagen {
+.proyectos .contenedorgaleria img {
+	view-transition-name: photo-0;
+}
+
+.contenedorimagen {
 	display: flex;
+	flex-direction: row;
+	align-content: space-between;
+	gap: 20px;
+	padding-left: 80px;
+	margin-top: 20px;
+}
+
+.contenedorimagen img {
+	border-radius: 10px;
+}
+
+.contenedorimagen h2, h4, h5 {
 	width: 50%;
 }
 
-.informacion {
+.contenedorimagen a {
+	text-decoration: none;
+	color: white;
+}
+
+.contenedorimagen p {
 	display: flex;
-	flex-direction: column;
-	width: 40%;
-} /* quiero lograr que la información de cada imagen esté al costado pero no lo estaría logrando */
+	justify-content: space-around;
+	margin-top: 30px;
+	padding: 10px;
+	width: 18%;
+	background-color: #A28C48;
+	border-radius: 10px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	transition: transform 0.3s ease;
+}
+
+.contenedorimagen p:hover {
+	background-color: #618634;
+	transform: scale(1.1);
+}
 
 .audio {
 	height: 100px;
@@ -333,10 +383,75 @@ footer {
 	justify-content: center;
 }
 
-.cursor {
-	position: fixed;
-	width: 30px;
-	height: 30px;
-	background-image: url("img/cursor.svg");
-	background-size: cover;
+@media screen and (max-width:600px) {
+	
+	/* INDEX */
+	.fotoynombre {
+		flex-direction: column;
+	}
+	
+	.contenedor {
+		flex-direction: column;
+		align-content: center;
+		margin: 0px 120px;
+	}
+	
+	.contenedor h2 {
+		max-width: 100%;
+	}
+	
+	.contenedor p {
+		max-width: 100%;
+	}
+	
+	/* PROYECTOS */
+	.contenedorgaleria {
+		flex-direction: column;
+		}
+	
+	.fila1, .fila2 {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 18px;
+		width: 100%;
+	}
+	
+	/* CONTACTO */
+	.contacto-formulario h4 {
+		width: 80%;
+		padding: 40px 0px 20px;
+	}
+	
+	.items-formulario {
+		flex-direction: column;
+		align-items: flex-start;
+		
+	}
+	
+	form {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	
+	.contenedorformulario {
+		margin: 0px;
+	}
+	
+	form p {
+		width: 150%;
+	}
+	
+	input {
+		width: 150%;
+	}
+	
+	textarea {
+		width: 150%;
+	}
+	
+	.enviar-formulario {
+		width: auto;
+	}
 }
