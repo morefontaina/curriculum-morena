@@ -188,6 +188,10 @@ section {
 	margin-top: 60px;
 }
 
+.contacto-formulario h2 {
+	padding-top: 60px;
+}
+
 .contenedorformulario {
 	margin: 30px 200px 0px 200px;
 }
@@ -246,6 +250,7 @@ textarea {
 	margin-top: 30px;
 	height: 40px;
 	width: 20%;
+	margin-bottom: 30px;
 }
 
 .enviar-formulario input {
@@ -301,10 +306,9 @@ textarea {
 	padding-bottom: 18px;
 }
 
-/* PRUEBA DE TRANSICIÓN - no me estaría saliendo */
 .proyectos .contenedorgaleria img {
 	view-transition-name: photo-0;
-}
+} /* PRUEBA DE TRANSICIÓN - no me estaría saliendo */
 
 .contenedorimagen {
 	display: flex;
@@ -317,8 +321,12 @@ textarea {
 
 .contenedorimagen img {
 	border-radius: 10px;
+	box-shadow: 0px 5px 20px;
 }
-/*quise modificar el width de h5 en cada uno de los html pertenecientes a la galería pero no pude ya que se modifica el width del resto de h5 que existen (debe ser un problema con las etiquetas seguro)*/
+
+.contenedorimagen h4 {
+		width: 60%;
+	}
 
 .contenedorimagen a {
 	text-decoration: none;
@@ -356,7 +364,6 @@ textarea {
 	width: 50%;
 	margin-top: 20px;
 	padding: 12px 0px 10px;
-	/*background-color: #B2E067; - lo dejo así porque no me decido todavía */ 
 	border-radius: 10px;
 	box-shadow: 0px 5px 20px;
 	display: flex;
@@ -400,7 +407,7 @@ footer {
 	
 	h4 {
 		font-size: 18px;
-		line-height: 26px;
+		line-height: 22px;
 	}
 	
 	p, h5, li, label {
@@ -422,6 +429,7 @@ footer {
 	
 	.fotoynombre {
 		flex-direction: column;
+		padding-top: 60px;
 	}
 	
 	.contenedor {
@@ -443,8 +451,14 @@ footer {
 	}
 	
 	/* PROYECTOS */
+	
+	section h2 {
+		padding-top: 40px;
+	}
+	
 	.contenedorgaleria {
 		flex-direction: column;
+		padding-top: 40px;
 		}
 	
 	.fila1, .fila2 {
@@ -457,26 +471,32 @@ footer {
 	.contenedorimagen {
 		flex-direction: column;
 		width: 200%;
+		padding-bottom: 40px;
 	}
 	
 	.contenedorimagen h4 {
-		width: 80%;
+		width: 40%;
 	}
 	
 	.contenedorimagen img {
-		height: 50%;
-		width: 50%;
+		height: 40%;
+		width: 40%;
 	}
 	
 	.contenedorimagen a {
 		height: 100%;
-		width: 200%;
+		width: 50%;
 	}
 	
 	/* CONTACTO */
+	
+	.contacto-formulario h2 {
+	padding-top: 100px;
+	}
+	
 	.contacto-formulario h4 {
 		width: 80%;
-		padding: 40px 0px 20px;
+		padding: 20px 0px 20px;
 	}
 	
 	.items-formulario {
@@ -510,5 +530,6 @@ footer {
 	
 	.enviar-formulario {
 		width: auto;
+		margin-bottom: 30px;
 	}
 }
