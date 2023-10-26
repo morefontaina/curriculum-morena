@@ -183,12 +183,12 @@ h5 {
 	line-height: 25px;
 }
 
-.contenedorformulario {
-	margin: 30px 200px 0px 200px;
+section {
+	margin-top: 60px;
 }
 
-.contenedorformulario p {
-	padding-bottom: 20px;
+.contenedorformulario {
+	margin: 30px 200px 0px 200px;
 }
 
 .items-formulario {
@@ -300,6 +300,7 @@ textarea {
 	padding-bottom: 18px;
 }
 
+/* PRUEBA DE TRANSICIÓN - no me estaría saliendo */
 .proyectos .contenedorgaleria img {
 	view-transition-name: photo-0;
 }
@@ -316,10 +317,7 @@ textarea {
 .contenedorimagen img {
 	border-radius: 10px;
 }
-
-.contenedorimagen h2, h4, h5 {
-	width: 50%;
-}
+/*quise modificar el width de h5 en cada uno de los html pertenecientes a la galería pero no pude ya que se modifica el width del resto de h5 que existen (debe ser un problema con las etiquetas seguro)*/
 
 .contenedorimagen a {
 	text-decoration: none;
@@ -386,6 +384,12 @@ footer {
 @media screen and (max-width:600px) {
 	
 	/* INDEX */
+	
+	.botonera {
+		flex-direction: column;
+		align-items: center;
+	}
+	
 	.fotoynombre {
 		flex-direction: column;
 	}
@@ -413,6 +417,20 @@ footer {
 		flex-direction: column;
 		align-items: flex-start;
 		gap: 18px;
+		width: 100%;
+	}
+	
+	.contenedorimagen {
+		flex-direction: column;
+	}
+	
+	.contenedorimagen img {
+		height: 80%;
+		width: 80%;
+	}
+	
+	.contenedorimagen a {
+		height: 100%;
 		width: 100%;
 	}
 	
