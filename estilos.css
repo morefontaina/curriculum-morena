@@ -437,11 +437,7 @@ footer {
 		margin: 0px 120px;
 	}
 	
-	.contenedor h2 {
-		max-width: 100%;
-	}
-	
-	.contenedor p {
+	.contenedor h2, p {
 		max-width: 100%;
 	}
 	
@@ -490,7 +486,7 @@ footer {
 	/* CONTACTO */
 	
 	.contacto-formulario h2 {
-	padding-top: 100px;
+		padding-top: 100px;
 	}
 	
 	.contacto-formulario h4 {
@@ -519,11 +515,7 @@ footer {
 		width: 150%;
 	}
 	
-	input {
-		width: 150%;
-	}
-	
-	textarea {
+	input, textarea {
 		width: 150%;
 	}
 	
