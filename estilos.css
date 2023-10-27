@@ -307,7 +307,7 @@ textarea {
 
 .proyectos .contenedorgaleria img {
 	view-transition-name: photo-0;
-} /* PRUEBA DE TRANSICIÓN - no me estaría saliendo */
+}
 
 .contenedorimagen {
 	display: flex;
